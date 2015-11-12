@@ -1,6 +1,7 @@
 package chapter1;
 
 import java.util.Arrays;
+import java.util.concurrent.RunnableFuture;
 
 /**
  * Created by hao.yan on 2015/11/10.
@@ -8,7 +9,6 @@ import java.util.Arrays;
 public class Main7InverseNumber {
     static int[] num = {2, 6, 3, 1, 4, 9, 7, 8, 0};
     static int count = 0;
-
     public static void main(String[] args) {
         divide(num, 0, num.length - 1);
         System.out.println(count);
