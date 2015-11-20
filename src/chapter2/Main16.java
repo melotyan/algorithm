@@ -1,13 +1,15 @@
 package chapter2;
 
+import java.nio.ByteBuffer;
+
 /**
  * Created by hao.yan on 2015/11/19.
  */
 public class Main16 {
     //求一个数组中递增数列的最大长度
-    //2, 1, 3, -6, 4   最大长度为3, (2, 3, 4) 或 (1, 3, 4)
+    //如2, 1, 3, -6, 4   最大长度为3, (2, 3, 4) 或 (1, 3, 4)
     public static void main(String[] args) {
-        int[] num = {3, 1, 2, 8, -5, 4, -3, 7, 5, 6, 10, 9, 12, 11};
+        int[] num = {1,-1,2,-3,4,-5,6,-7};
         System.out.println(getMaxLenOfIncremental1(num));
         System.out.println(getMaxLenOfIncremental2(num));
     }
